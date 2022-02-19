@@ -14,10 +14,16 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { TempsParHeuresComponent } from './components/temps-par-heures/temps-par-heures.component';
+import { TempsParJoursComponent } from './components/temps-par-jours/temps-par-jours.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TempsParHeuresComponent,
+    TempsParJoursComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatTabsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
