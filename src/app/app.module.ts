@@ -15,15 +15,20 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import { TempsParHeuresComponent } from './components/temps-par-heures/temps-par-heures.component';
-import { TempsParJoursComponent } from './components/temps-par-jours/temps-par-jours.component';
+
+
 import { MatTabsModule } from '@angular/material/tabs';
+import { FormsModule } from '@angular/forms';
+
+import { TaillePoucesComponent } from './components/taille-pouces/taille-pouces.component';
+import { TaillePiedsComponent } from './components/taille-pieds/taille-pieds.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TempsParHeuresComponent,
-    TempsParJoursComponent
+    
+    TaillePoucesComponent,
+    TaillePiedsComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatDatepickerModule,
     MatNativeDateModule,
     MatTabsModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TempsParJoursComponent } from './temps-par-jours.component';
+import { TaillePoucesComponent } from './taille-pouces.component';
 
-describe('TempsParJoursComponent', () => {
-  let component: TempsParJoursComponent;
-  let fixture: ComponentFixture<TempsParJoursComponent>;
+describe('TaillePoucesComponent', () => {
+  let component: TaillePoucesComponent;
+  let fixture: ComponentFixture<TaillePoucesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TempsParJoursComponent ]
+      declarations: [ TaillePoucesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TempsParJoursComponent);
+    fixture = TestBed.createComponent(TaillePoucesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

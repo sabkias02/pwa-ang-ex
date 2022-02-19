@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
-import { TempsParHeuresComponent } from './components/temps-par-heures/temps-par-heures.component';
-import {TempsParJoursComponent } from './components/temps-par-jours/temps-par-jours.component';
+import { TaillePiedsComponent } from './components/taille-pieds/taille-pieds.component';
+import {TaillePoucesComponent} from './components/taille-pouces/taille-pouces.component';
+
+
 
 
 const routes: Routes = [
- { path: 'temps-par-heures', component: TempsParHeuresComponent },
- { path: 'temps-par-jours', component: TempsParJoursComponent },
+ { path: 'taille-pieds', component: TaillePiedsComponent },
+ { path: 'taille-pouces', component: TaillePoucesComponent },
 ];
 
 @NgModule({
@@ -14,4 +16,12 @@ const routes: Routes = [
   [RouterModule.forRoot(routes, { useHash: true })],
  exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { }//L<B:'
+
+
+
+
+
+
+
+

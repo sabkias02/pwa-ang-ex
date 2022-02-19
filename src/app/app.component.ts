@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  tabs : any = [{label: "temps-par-heures", link: "/temps-par-heures"}, {label: "temps-par-jour", link: "/temps-par-jour"}]
+  tabs : any = [{label: "taille-pouces", link: "/taille-pouces"}, {label: "taille-pieds", link: "/taille-pieds"}]
   
 } 
