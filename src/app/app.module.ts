@@ -26,7 +26,6 @@ import { TaillePiedsComponent } from './components/taille-pieds/taille-pieds.com
 @NgModule({
   declarations: [
     AppComponent,
-    
     TaillePoucesComponent,
     TaillePiedsComponent
   ],

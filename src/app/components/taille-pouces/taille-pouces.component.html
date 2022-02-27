@@ -2,16 +2,18 @@
 <div class="container">
 <p>convertir votre taille </p>
 
-    <mat-form-field class="example-full-width" appearance="fill" id="cent">
+    <mat-form-field class="example-full-width" appearance="fill" >
       <mat-label>en centimetres</mat-label>
-      <input matInput placeholder="1234...." value="centimetres">
+      <input matInput placeholder=123...  [(ngModel)]="centimetre" (ngModelChange)="cmToPouce()">
      
+      
     </mat-form-field>
    
-      <mat-form-field class="example-full-width" appearance="fill"[floatLabel]="floatLabelControl.value">
+      <mat-form-field class="example-full-width" appearance="fill"[floatLabel]="floatLabelControl.value" >
         <mat-label>en Pouces</mat-label>
-        <input matInput placeholder="1234...." value="pouces">
+        <input matInput placeholder=123... [(ngModel)]="pouce" (ngModelChange)="pouceToCm()" >
        
+        
       </mat-form-field>
     </div>
   
