@@ -1,7 +1,6 @@
 import { TailleService } from './../../taille.service';
 import { Component, OnInit } from '@angular/core';
-import {FormControl} from '@angular/forms';
-
+import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-taille-pieds',
   templateUrl: './taille-pieds.component.html',
@@ -9,24 +8,21 @@ import {FormControl} from '@angular/forms';
 })
 export class TaillePiedsComponent implements OnInit {
   floatLabelControl = new FormControl('auto');
- 
-  private _centimetre:string = '' ;
-  private _pied:string = '';
 
-  constructor(private tailleService:TailleService) { }
-  
+  private _centimetre: string = '';
+  private _pied: string = '';
 
-  get centimetre(){
+  constructor(private tailleService: TailleService) { }
+
+  get centimetre() {
     return this._centimetre;
   }
-
   set centimetre(val: string) {
     //do some extra work here
     this._centimetre = val;
   }
-  
 
-  get pied(){
+  get pied() {
     return this._pied;
   }
 
@@ -34,14 +30,14 @@ export class TaillePiedsComponent implements OnInit {
     //do some extra work here
     this._pied = val;
   }
- 
-  cmToPied(){
-    const result = this.tailleService.cmToInche(Number(this._centimetre)).toFixed(2);
+
+  cmToPied() {
+    const result = this.tailleService.cmToPied(Number(this._centimetre)).toFixed(2);
     this._pied = result.toString();
   }
 
-  piedToCm(){
-    const result = this.tailleService.incheToCm(Number(this._pied)).toFixed(2);
+  piedToCm() {
+    const result = this.tailleService.piedToCm(Number(this._pied)).toFixed(2);
     this._centimetre = result.toString();
   }
 
@@ -50,4 +46,4 @@ export class TaillePiedsComponent implements OnInit {
 
 }
 
-  
+

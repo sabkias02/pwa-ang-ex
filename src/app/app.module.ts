@@ -15,15 +15,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-
-
-
-
 import { MatTabsModule } from '@angular/material/tabs';
 import { FormsModule } from '@angular/forms';
-
 import { TaillePoucesComponent } from './components/taille-pouces/taille-pouces.component';
-
 import { TailleInchesComponent } from './components/taille-inches/taille-inches.component';
 import { TaillePiedsComponent } from './components/taille-pieds/taille-pieds.component';
 
@@ -32,10 +26,9 @@ import { TaillePiedsComponent } from './components/taille-pieds/taille-pieds.com
   declarations: [
     AppComponent,
     TaillePoucesComponent,
-   
     TailleInchesComponent,
-         TaillePiedsComponent,
-  
+    TaillePiedsComponent,
+
   ],
   imports: [
     BrowserModule,

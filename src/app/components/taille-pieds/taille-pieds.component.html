@@ -1,17 +1,13 @@
 <div class="container">
-    <p>convertir votre taille <span class="convert">(Cm vers Pied ou Pied vers Cm)</span></p>
-    
-        <mat-form-field class="example-full-width" appearance="fill" >
-          <mat-label>en centimetres</mat-label>
-          <input matInput placeholder=123...  [(ngModel)]="centimetre" (ngModelChange)="cmToPied()">
-         
-          
-        </mat-form-field>
-       
-          <mat-form-field class="example-full-width" appearance="fill"[floatLabel]="floatLabelControl.value" >
-            <mat-label>en Pieds</mat-label>
-            <input matInput placeholder=123... [(ngModel)]="pied" (ngModelChange)="piedToCm()" >
-           
-            
-          </mat-form-field>
-        </div>
+  <p>convertir votre taille <span class="convert">(Cm vers Pied ou Pied vers Cm)</span></p>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>en centimetres</mat-label>
+    <input matInput placeholder=123... [(ngModel)]="centimetre" (ngModelChange)="cmToPied()">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill" [floatLabel]="floatLabelControl.value">
+    <mat-label>en Pieds</mat-label>
+    <input matInput placeholder=123... [(ngModel)]="pied" (ngModelChange)="piedToCm()">
+  </mat-form-field>
+</div>

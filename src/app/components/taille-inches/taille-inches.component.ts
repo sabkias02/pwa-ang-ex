@@ -1,6 +1,6 @@
 import { TailleService } from './../../taille.service';
 import { Component, OnInit } from '@angular/core';
-import {FormControl} from '@angular/forms';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-taille-inches',
@@ -9,24 +9,22 @@ import {FormControl} from '@angular/forms';
 })
 export class TailleInchesComponent implements OnInit {
   floatLabelControl = new FormControl('auto');
- 
-  private _centimetre:string = '' ;
-  private _inche:string = '';
 
-  constructor(private tailleService:TailleService) { }
-  
+  private _centimetre: string = '';
+  private _inche: string = '';
 
-  get centimetre(){
+  constructor(private tailleService: TailleService) { }
+
+  get centimetre() {
     return this._centimetre;
   }
-
   set centimetre(val: string) {
     //do some extra work here
     this._centimetre = val;
   }
-  
 
-  get inche(){
+
+  get inche() {
     return this._inche;
   }
 
@@ -34,13 +32,13 @@ export class TailleInchesComponent implements OnInit {
     //do some extra work here
     this._inche = val;
   }
- 
-  cmToInche(){
+
+  cmToInche() {
     const result = this.tailleService.cmToInche(Number(this._centimetre)).toFixed(2);
     this._inche = result.toString();
   }
 
-  incheToCm(){
+  incheToCm() {
     const result = this.tailleService.incheToCm(Number(this._inche)).toFixed(2);
     this._centimetre = result.toString();
   }
@@ -50,4 +48,4 @@ export class TailleInchesComponent implements OnInit {
 
 }
 
-  
+
