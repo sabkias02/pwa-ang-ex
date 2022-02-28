@@ -23,5 +23,10 @@ export class TailleService {
     return value*30.48;
      
    }
-  
+   cmToInche(value: number){
+    return value* 0.3937  ;
+  } 
+  incheToCm(value: number){
+    return value/0.3937;
+}
 }

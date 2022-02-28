@@ -1,0 +1,18 @@
+<div class="container">
+    <p>convertir votre taille </p>
+    
+        <mat-form-field class="example-full-width" appearance="fill" >
+          <mat-label>en centimetres</mat-label>
+          <input matInput placeholder=123...  [(ngModel)]="centimetre" (ngModelChange)="cmToInche()">
+         
+          
+        </mat-form-field>
+       
+          <mat-form-field class="example-full-width" appearance="fill"[floatLabel]="floatLabelControl.value" >
+            <mat-label>en Inches</mat-label>
+            <input matInput placeholder=123... [(ngModel)]="inche" (ngModelChange)="incheToCm()" >
+           
+            
+          </mat-form-field>
+        </div>
+      
