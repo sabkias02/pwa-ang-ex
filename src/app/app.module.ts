@@ -23,16 +23,18 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { FormsModule } from '@angular/forms';
 
 import { TaillePoucesComponent } from './components/taille-pouces/taille-pouces.component';
-import { TaillePiedsComponent } from './components/taille-pieds/taille-pieds.component';
+
 import { TailleInchesComponent } from './components/taille-inches/taille-inches.component';
+import { TaillePiedsComponent } from './components/taille-pieds/taille-pieds.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TaillePoucesComponent,
-    TaillePiedsComponent,
+   
     TailleInchesComponent,
+         TaillePiedsComponent,
   
   ],
   imports: [
